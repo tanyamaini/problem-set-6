@@ -43,10 +43,10 @@ function sayHello() {
  */
 
 function drawRectangle() {
-  height=-1;
-  width=-1;
-  x=-1;
-  y=-1;
+  let height=-1;
+  let width=-1;
+  let x=-1;
+  let y=-1;
   var canvas = document.getElementById("canvas2");
   var div = document.getElementById("exercise2");
   while(height < 1){
