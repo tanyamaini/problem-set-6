@@ -12,6 +12,11 @@
 
 function sayHello() {
 
+var canvas = document.getElementById("canvas1");
+var ctx = canvas.getContext("2d");
+ctx.font = "48px Sans-serif";
+ctx.strokeText("Hello, World",10,50);
+
 }
 
 /*
