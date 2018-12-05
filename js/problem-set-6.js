@@ -12,10 +12,10 @@
 
 function sayHello() {
 
-var canvas = document.getElementById("canvas1");
-var ctx = canvas.getContext("2d");
-ctx.font = "48px Sans-serif";
-ctx.strokeText("Hello, World",10,50);
+  var canvas = document.getElementById("canvas1");
+  var text = canvas.getContext("2d");
+  text.font = "48px Sans-serif";
+  text.strokeText("Hello, World",10,50);
 
 }
 
@@ -43,7 +43,43 @@ ctx.strokeText("Hello, World",10,50);
  */
 
 function drawRectangle() {
-
+  height=-1;
+  width=-1;
+  x=-1;
+  y=-1;
+  var canvas = document.getElementById("canvas2");
+  var div = document.getElementById("exercise2");
+  while(height < 1){
+    parseFloat = 'FF2';
+    height = Number(prompt("Enter a height greater than 1."));
+    break;
+  }
+  while(width < 1 || !Number.isInteger== true){
+    width = Number(prompt("Enter a width greater than 1."));
+    break;
+  }
+  while(x < 5 || !Number.isInteger== true){
+    x = Number(prompt("Enter a x coordinate greater than 5."));
+    break;
+  }
+  while(y < 5 || !Number.isInteger== true){
+    y = Number(prompt("Enter a y coordinate greater than 5."));
+    break;
+  }
+  if(height > canvas2.height && width > canvas2.width){
+    alert("Sorry. The height and width you input are too large.")
+  }
+  else if(height > canvas2.height){
+    alert("Sorry. The height you input is too large.")
+  }
+  else if(width > canvas2.width){
+    alert("Sorry. The width you input is too large.")
+  }
+  if (width <= canvas2.width && height<=canvas2.height){
+    var rectangle = canvas.getContext('2d');
+    rectangle.clearRect(0, 0, canvas2.width, canvas2.height);
+    rectangle.strokeRect(x, y, width, height);
+  }
 }
 
 /*
